@@ -2,6 +2,7 @@ import React from "react"
 import { Route, Link } from "react-router-dom"
 import Home from "../containers/Home"
 import About from "../containers/About"
+import Counter from "../containers/Counter"
 
 const App = () => (
   <div>
@@ -11,8 +12,7 @@ const App = () => (
     </header>
 
     <main>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about-us" component={About} />
+      <Counter />
     </main>
   </div>
 )
